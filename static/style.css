@@ -1,37 +1,3 @@
-<template>
-  <div class="container">
-    <h1 class="title">Heritago Wisata</h1>
-    <p class="subtitle">Explore & Share Your Journey</p>
-
-    <!-- Image -->
-    <img src="/static/a.png" alt="Heritago Wisata"/>
-
-    <p class="text-bawah">Excited? Let's get into it!</p>
-
-    <!-- Buttons -->
-    <div class="button-container">
-      <button class="btn login" @click="login">Login</button>
-      <button class="btn create" @click="createAccount">Create an Account</button>
-    </div>
-  </div>
-</template>
-
-<script>
-export default {
-  methods: {
-    login() {
-      // Logic for login
-      console.log("Login clicked");
-    },
-    createAccount() {
-      // Logic for creating an account
-      console.log("Create an Account clicked");
-    }
-  }
-}
-</script>
-
-<style scope>
 * {
     margin: 0;
     padding: 0;
@@ -116,4 +82,3 @@ export default {
     border: 2px solid #2cd5c4;
   }
   
-</style>
