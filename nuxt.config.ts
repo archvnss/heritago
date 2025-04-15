@@ -1,7 +1,8 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2024-11-01',
-  devtools: { enabled: true },
+  css: [
+    'bootstrap/dist/css/bootstrap.min.css',
+    'bootstrap-icons/font/bootstrap-icons.css'
+  ],
   app: {
     head: {
       link: [
@@ -11,12 +12,12 @@ export default defineNuxtConfig({
         },
         {
           rel: 'stylesheet',
-          href: '/style.css' // Mengakses file CSS yang ada di dalam folder static
+          href: '/style.css'
         }
       ],
       meta: [
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' }, // Menambahkan meta tag untuk viewport
-        { charset: 'UTF-8' } // Menambahkan charset untuk dukungan karakter global
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { charset: 'UTF-8' }
       ]
     }
   }
